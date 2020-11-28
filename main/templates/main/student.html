@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- landlord body -->
+    <div class="bookings">
+        <div class="heading">
+            <h1> Compfy Hostels</h1>
+            <br>
+            <br>
+        </div>
+    
+        <!-- Bookings table -->
+        <div>
+            <table>
+                <!-- Column titles -->
+                <tr>
+                    <th>Room ID</th>
+                    <th>Room View</th>
+                    <th>Landlord Name</th>
+                    <th>Apartment Name</th>
+                    <th>Physical Address</th>
+                    <th>Rent Charges</th>
+                    <th></th>
+                </tr>
+    
+    
+                  <!-- Entry 1 -->
+                <tr>
+                    <td>24</td>
+                    <td>
+                        <img src="images/accomodation.jpg">
+                    </td>
+                    <td>Alehadro Rodrigez</td>
+                    <td>Compfy</td>
+                    <td>Hunter Street</td>
+                    <td>$ 34,000.00</td>
+                    <td>
+                        <button>Save</button>
+                        <button>Book</button>
+                    </td>
+                  </tr>
+            </table>
+        </div>
+    
+    </div>
+  
+{% endblock content %}

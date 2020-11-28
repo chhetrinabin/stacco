@@ -1,0 +1,57 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+  
+    <!-- landlord body -->
+<div class="bookings">
+    <div class="heading">
+        <h1>Welcome Moderator,</h1>
+        <h3>You have 2 advertisements from Landlords that are pending your review</h3>
+        <br>
+        <br>
+    </div>
+
+    <!-- Bookings table -->
+    <div>
+        <table>
+            <!-- Column titles -->
+            <tr>
+                <th>Room ID</th>
+                <th>Room View</th>
+                
+                <th>Apartment Name</th>
+                <th></th>
+            </tr>
+
+            <!-- Entry 1 -->
+            <tr>
+                <td>21</td>
+                <td>
+                    <img src="images/accomodation2.jpg">
+                </td>
+                
+                <td>UpHill Hostels</td>
+                <td>
+                    <button>Approve</button>
+                    <button>Reject</button>
+                </td>
+              </tr>
+
+              <!-- Entry 1 -->
+            <tr>
+                <td>24</td>
+                <td>
+                    <img src="images/accomodation.jpg">
+                </td>
+                <td>Alehadro Rodrigez</td>
+                <td>
+                    <button>Approve</button>
+                    <button>Reject</button>
+                </td>
+              </tr>
+        </table>
+    </div>
+
+</div>
+{% endblock content %}

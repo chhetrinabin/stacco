@@ -1,0 +1,9 @@
+{% extends "account/base.html" %}
+
+<h1>Edit Advertisment</h1>
+<form action="{% url 'ads_edit' post.pk %}"
+      method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <p><input type="submit" value="Edit"></p>
+</form>

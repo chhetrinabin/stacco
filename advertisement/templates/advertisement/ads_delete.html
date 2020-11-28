@@ -1,0 +1,14 @@
+{% extends "account/base.html" %}
+
+<h1>Delete Advertisment</h1>
+<form action="{% url 'ads_delete' ads.pk %}" method="post">
+    {% csrf_token %}
+    {{ form }}
+
+    Are you sure you want to delete the following Advertisement?:<br><br>
+    {{ ads.title }}?<br><br>
+    
+    <p><input type="submit" value="Delete"></p>
+    <a href="{% url 'ads_create' %}">Cancel</a>
+
+</form>
